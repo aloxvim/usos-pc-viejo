@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# 💻 Usos para un PC viejo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un pequeño blog con ideas para darle una segunda vida a ese ordenador viejo que no quieres tirar: servidor casero, juegos retro, sistemas ligeros con Linux, etc...
 
-Currently, two official plugins are available:
+> [!WARNING]
+> **Este es un proyecto para practicar React**. Lo hago para aprender, el código no pretende ser perfecto: habrá errores, decisiones mejorables y partes que cambiarán según vaya aprendiendo. Cualquier sugerencia es bienvenida.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🧩 Tecnologías
+- React con Typescript
+- Vite como herramienta de desarrollo
+- Tailwind CSS para los estilos
+- pnpm como gestor de paquetes
 
-## React Compiler
+## 🚀 Cómo ejecutarlo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Necesitas Node.js (recomendable tenerlo actualizado) y pnpm
 
-## Expanding the ESLint configuration
+```bash
+# Instalar dependencias
+pnpm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Arrancar el servidor de desarrollo
+pnpm run dev
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+# Generar la versión de producción
+pnpm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 📝 Créditos
+- Icono de perfil genérico:https://www.flaticon.es/iconos-gratis/imagen-de-perfil
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Imagen de perfil: "Early Evening" de Michal Kváč - ArtStation - https://www.artstation.com/kvacm
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Icono de Instagram: https://www.flaticon.es/iconos-gratis/logotipo-de-instagram
 
-```
+- Icono de Github: https://www.flaticon.es/iconos-gratis/github
+
+- Icono de Youtube: https://www.flaticon.es/iconos-gratis/youtube
+
+- Icono de ordenador: https://www.flaticon.es/iconos-gratis/computadora
+
