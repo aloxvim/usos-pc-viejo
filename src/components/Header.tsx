@@ -33,6 +33,15 @@ function Header() {
             </section>
 
             {/**
+             *  Título de la web
+             */}
+            <div>
+                <h1 className='text-white text-3xl font-isometra italic'>
+                    Usos para ordenadores antiguos
+                </h1>
+            </div>
+
+            {/**
              *  Sección de enlaces
              *      Posicionada a la derecha
              *      Los enlaces se muestran en la misma linea horizontal con un margen entre ellos

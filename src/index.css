@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+ --font-isometra: 'Isometra', cursive;
+}
+
+@font-face {
+    font-family: 'Isometra';
+    src: url('./fonts/Isometra/Isometra-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
