@@ -1,5 +1,6 @@
 import plexPhoto from '../assets/multimedia/plex.jpg';
 import jellyfinPhoto from '../assets/multimedia/jellyfin.jpg';
+import kodiPhoto from '../assets/multimedia/kodi.png';
 
 function Main() {
     return (
@@ -90,7 +91,7 @@ function Main() {
                                     <tr>
                                         <td>🖨️ Utilidades</td>
                                         <td>Servidor de impresoras / archivos</td>
-                                        <td>Fácil</td>
+                                        <td>Fácil-Media</td>
                                     </tr>
 
                                     <tr>
@@ -136,7 +137,7 @@ function Main() {
 
                         <h2 className="text-3xl">🎬 Multimedia</h2>
 
-                        <h3>Servidor de streaming</h3>
+                        <h3 className='text-2xl'>Servidor de streaming</h3>
                         <p>
                             ¿Tienes una colección de DVD en tu casa y te gustaría tener el
                             contenido organizado en una aplicación con una apariencia parecida
@@ -180,8 +181,8 @@ function Main() {
                          *      Esquinas redondeadas
                          *      Borde fino gris claro
                          */}
-                        <img src={plexPhoto} alt="Ejemplo de cómo se ve un servidor" 
-                        className='w-full rounded-lg border border-stone-200' />
+                        <img src={plexPhoto} alt="Ejemplo de cómo se ve un servidor"
+                            className='w-full rounded-lg border border-stone-200' />
 
                         <p>
                             Plex tiene una pega, y es que varias de sus características, incluida
@@ -213,7 +214,7 @@ function Main() {
                         {/**
                          *  Título negrita, tamaño al doble y separación del bloque anterior
                          */}
-                        <h3 className="font-bold text-2xl mt-2">Jellyfin</h3>
+                        <h3 className="font-bold text-2xl mt-4">Jellyfin</h3>
 
                         <p>
                             A resumidas cuentas. Jellyfin es lo mismo que plex pero con 3 diferencias clave:
@@ -254,8 +255,8 @@ function Main() {
                         {/**
                          *  Captura de Jellyfin: mismo estilo que la de Plex
                          */}
-                        <img src={jellyfinPhoto} alt="Ejemplo de cómo se ve" 
-                        className='w-full rounded-lg border border-stone-200' />
+                        <img src={jellyfinPhoto} alt="Ejemplo de cómo se ve"
+                            className='w-full rounded-lg border border-stone-200' />
 
                         {/**
                          *  Enlace de descarga: mismo estilo que el de plex
@@ -267,6 +268,92 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+                    </div>
+
+                    {/** Bloque de Kodi
+                     *      Separación vertical para cada elemento
+                     */}
+                    <div className='space-y-4'>
+                        {/**
+                         *  Título negrita, tamaño al doble y separación del bloque anterior
+                         */}
+                        <h3 className="font-bold text-2xl mt-4">Kodi</h3>
+
+                        <p>
+                            Kodi podría parecer un reproductor multimedia común.
+                            Sin embargo, tiene algo que lo diferencia, la posibilidad de
+                            instalar complementos de terceros.
+                        </p>
+
+                        <p>
+                            Desde cambiar por completo la interfaz hasta incluso jugar con
+                            emuladores, el límite está en cuánto quieres configurar.
+                        </p>
+
+                        <p className='text-justify'>
+                            Hablar en detalle de los complementos haría este blog interminable,
+                            por lo que mi recomendación es, que si te decantas por usar Kodi,
+                            investigues cuáles son los complementos que te interesan. Hay
+                            muchos tutoriales en Internet.
+                        </p>
+
+                        <p>
+                            Se encuentra disponible en Windows, Linux, Android, Raspberry Pi, LG WEB-OS,
+                            Mac OS y IOS.
+                        </p>
+
+                        <p>
+                            Sus requisitos son: procesador Pentium 4 o superior y
+                            al menos 1 GB RAM.
+                        </p>
+
+                        {/** Captura de Kodi, mismo estilo que las anteriores */}
+                        <figure>
+                            <img src={kodiPhoto} alt=""
+                                className='w-full rounded-lg border border-stone-200' />
+                            <figcaption>
+                                Captura tomada de su página en&nbsp;
+                                <a href="https://flathub.org/es/apps/tv.kodi.Kodi"
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='underline hover:text-black'>
+                                    flathub.
+                                </a>
+                            </figcaption>
+                        </figure>
+
+                        {/** Enlace de descarga, mismo estilo que los anteriores */}
+                        <a href="https://kodi.tv/download/"
+                            target='_blank'
+                            rel='noreferrer'
+                            className='text-sky-700 underline underline-offset-4
+                            hover:text-sky-900 transition'>
+                            Enlace de descarga
+                        </a>
+                    </div>
+
+                    {/**
+                     *  Bloque de Utilidades
+                     */}
+                    <div className='space-y-4 mt-5'>
+                        <h2 className="text-3xl">🖨️ Utilidades</h2>
+
+                        <h3 className='text-2xl'>Servicios de impresión y archivos</h3>
+
+                        <p className='text-justify'>
+                            Si no quieres complicarte en exceso para la compartición de ficheros, 
+                            puedes usar servicios como samba o programas como Filezilla, donde puedes
+                            especificar qué carpetas quieres compartir. También puedes 
+                            instalar un sistema operativo como Open Media Vault, pero esto último ya 
+                            requiere un mayor tiempo de configuración. 
+                        </p>
+
+                        <p className='text-justify'>
+                            En cuando al servicio de impresión, conecta la impresora físicamente 
+                            al servidor y utiliza el sistema CUPS (Common Unix Printing System) 
+                            para compartirla en la red, permitiendo que otros equipos envíen 
+                            trabajos de impresión.
+                        </p>
                     </div>
                 </div>
             </div>
