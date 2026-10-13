@@ -1,6 +1,9 @@
 import plexPhoto from '../assets/multimedia/plex.jpg';
 import jellyfinPhoto from '../assets/multimedia/jellyfin.jpg';
 import kodiPhoto from '../assets/multimedia/kodi.png';
+import immichPhoto from '../assets/utilidades/immich.webp';
+import batoceraPhoto from '../assets/gaming/batocera-emulationstation.jpg';
+import retroarchPhoto from '../assets/gaming/retroarch.webp';
 
 function Main() {
     return (
@@ -98,12 +101,6 @@ function Main() {
                                         <td>🎮 Gaming</td>
                                         <td>Consola retro (Batocera)</td>
                                         <td>Fácil-Media</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>🛜 Red</td>
-                                        <td>Servidor NAS propio</td>
-                                        <td>Media-Difícil</td>
                                     </tr>
 
                                     <tr>
@@ -311,7 +308,7 @@ function Main() {
                         <figure>
                             <img src={kodiPhoto} alt=""
                                 className='w-full rounded-lg border border-stone-200' />
-                            <figcaption>
+                            <figcaption className='italic'>
                                 Captura tomada de su página en&nbsp;
                                 <a href="https://flathub.org/es/apps/tv.kodi.Kodi"
                                     target='_blank'
@@ -341,19 +338,350 @@ function Main() {
                         <h3 className='text-2xl'>Servicios de impresión y archivos</h3>
 
                         <p className='text-justify'>
-                            Si no quieres complicarte en exceso para la compartición de ficheros, 
+                            Si no quieres complicarte en exceso para la compartición de ficheros,
                             puedes usar servicios como samba o programas como Filezilla, donde puedes
-                            especificar qué carpetas quieres compartir. También puedes 
-                            instalar un sistema operativo como Open Media Vault, pero esto último ya 
-                            requiere un mayor tiempo de configuración. 
+                            especificar qué carpetas quieres compartir. También puedes
+                            instalar un sistema operativo como Open Media Vault, pero esto último ya
+                            requiere un mayor tiempo de configuración.
                         </p>
 
                         <p className='text-justify'>
-                            En cuando al servicio de impresión, conecta la impresora físicamente 
-                            al servidor y utiliza el sistema CUPS (Common Unix Printing System) 
-                            para compartirla en la red, permitiendo que otros equipos envíen 
+                            En cuando al servicio de impresión, conecta la impresora físicamente
+                            al servidor y utiliza el sistema CUPS (Common Unix Printing System)
+                            para compartirla en la red, permitiendo que otros equipos envíen
                             trabajos de impresión.
                         </p>
+                    </div>
+
+                    {/**
+                     *  Artículo de Immich
+                     *      
+                     */}
+                    <div className='space-y-4 mt-5'>
+                        <h3 className='text-2xl'>Google Photos Casero (Immich)</h3>
+
+                        <p className='text-justify'>
+                            Immich es una aplicación de código abierto y autoalojada diseñada
+                            para gestionar, almacenar y respaldar fotos y videos, funcionando
+                            como una alternativa privada a servicios como Google Photos o iCloud.
+                        </p>
+
+                        <p className='text-justify'>
+                            Su principal ventaja es que mantiene el control total de
+                            los datos en tu propio hardware, ofreciendo funciones
+                            avanzadas como reconocimiento facial, búsqueda semántica
+                            por contenido y sincronización automática desde móviles.
+                        </p>
+
+                        <p>
+                            Sus requisitos son: CPU de al menos 2 núcleos, siendo recomendable 4;
+                            mínimo 4 GB de RAM, siendo recomendable de 6 en adelante;
+                            en cuanto al espacio, un 10-20% adicional para miniaturas y metadatos.
+                        </p>
+
+                        <p>
+                            Se encuentra disponible mediante Docker.
+                        </p>
+
+                        {/** Bloque de texto de advertencia */}
+                        <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
+                            <div className="flex">
+                                <div className="flex-shrink-0">
+                                    <svg
+                                        className="h-5 w-5 text-yellow-400"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div className="ml-3">
+                                    <p className="text-sm text-yellow-700">
+                                        <span className="font-medium">Atención:</span> Immich permite
+                                        trabajar con bibliotecas de fotos ya existentes, en su primer
+                                        arranque, si tu biblioteca tiene mucho contenido, la CPU estará
+                                        trabajando al límite, sé de lo que hablo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/** Captura de pantalla, mismo estilo que las anteriores */}
+                        <figure>
+                            <img src={immichPhoto} alt=""
+                                className='w-full rounded-lg border border-stone-200' />
+                            <figcaption className='italic'>Captura descargada de la propia página de Immich.</figcaption>
+                        </figure>
+
+                        {/** Enlace de descarga, mismo estilo que los anteriores */}
+                        <a href="https://immich.app/"
+                            target='_blank'
+                            rel='noreferrer'
+                            className='text-sky-700 underline underline-offset-4
+                            hover:text-sky-900 transition'>
+                            Enlace de descarga
+                        </a>
+                    </div>
+
+                    {/**
+                     *  Bloque de Gaming
+                     *      
+                     */}
+                    <div className='space-y-4 mt-3'>
+                        <h2 className='text-3xl'>🎮 Gaming</h2>
+
+                        <h3 className='text-2xl'>Consola retro (Batocera, RetroArch, etc...)</h3>
+
+                        {/** Bloque de texto de advertencia */}
+                        <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
+                            <div className="flex">
+                                <div className="flex-shrink-0">
+                                    <svg
+                                        className="h-5 w-5 text-yellow-400"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div className="ml-3">
+                                    <p className="text-sm text-yellow-700">
+                                        <span className="font-medium">Atención:</span> Este artículo
+                                        NO busca promover la piratería. No se proporcionarán enlaces
+                                        a juegos ni cualquier otro contenido protegido por derechos de
+                                        autor. Los emuladores son legales, las ROMS, depende de cómo
+                                        las hayas obtenido.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p className='text-justify'>
+                            ¿Te acuerdas de las consolas clásicas? Uno de los usos que puedes darle a tu
+                            viejo PC es el de convertirlo en un sistema de emulación, desde la NES o la
+                            Megadrive hasta, si el PC puede dar la talla, PlayStation 2.
+                        </p>
+
+                        <div>
+                            Aquí vas a ver 2 opciones:
+                            <ul className='list-disc pl-6 space-y-1'>
+                                <li>Batocera: Un sistema listo para usar.</li>
+                                <li>RetroArch: Un programa que se instala sobre tu sistema actual.</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            Hay más opciones por si quieres curiosear.
+                        </p>
+                    </div>
+
+                    {/** Bloque de Batocera
+                     *      Separación vertical de elementos
+                     *      Margen superior
+                     */}
+                    <div className='space-y-4 mt-2'>
+                        <h3 className='text-2xl font-bold'>Batocera</h3>
+
+                        <p>
+                            Batocera es un sistema Linux que solo permite convertir un PC en
+                            una consola retro, también permite instalar Kodi.
+                        </p>
+
+                        <p className='text-justify'>
+                            Su gran ventaja es que puedes instalarlo en un USB, sin necesidad
+                            de tocar la configuración de tu PC (aunque también puedes instalarlo en el disco
+                            interno de tu PC).
+                            Es gratis y de código abierto,
+                            contando con más de 200 sistemas ya configurados.
+                        </p>
+
+                        <p className='text-justify'>
+                            Sus requisitos dependen de las consolas que quieras emular.
+                            Las consolas de 8 y 16 bits las mueve casi cualquier PC. Consolas
+                            más potentes como Play 2 en adelante necesitarán un procesador y
+                            gráfica más potentes.
+                        </p>
+
+                        {/** 
+                         *  Captura de Batocera
+                         *      Mismo estilo que las anteriores
+                         */}
+                        <figure>
+                            <img src={batoceraPhoto} alt=""
+                                className='w-full rounded-lg border border-stone-200' />
+                            <figcaption className='italic'>
+                                Captura obtenida desde&nbsp;
+                                <a href="https://raspberrytips.com/batocera-installation-raspberry-pi/"
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='text-sky-700 underline underline-offset-4
+                                                hover:text-sky-900 transition'>
+                                    esta web
+                                </a>
+                            </figcaption>
+                        </figure>
+
+                        {/** Enlace de descarga, mismo estilo que los anteriores */}
+                        <a href="https://batocera.org/download"
+                            target='_blank'
+                            rel='noreferrer'
+                            className='text-sky-700 underline underline-offset-4
+                            hover:text-sky-900 transition'>
+                            Enlace de descarga
+                        </a>
+                    </div>
+
+                    {/**
+                     *  Bloque de RetroArch
+                     *  
+                     */}
+                    <div className='space-y-4'>
+                        <h3 className='text-2xl font-bold mt-4'>RetroArch</h3>
+
+                        <p className='text-justify'>
+                            RetroArch NO es un emulador en sí, sino un programa que "junta"
+                            muchos emuladores, permitiendo la descarga de uno o varios desde 
+                            el propio programa. 
+                        </p>
+
+                        <p className='text-justify'>
+                            La principal diferencia con Batocera, es que RetroArch no es un sistema 
+                            aparte, es un programa que se instala en tu sistema como cualquier otro.
+                            Es gratuito y de código abierto.
+                        </p>
+
+                        <p>
+                            Se encuentra disponible en Windows, Linux, Android, Mac OS, etc...
+                        </p>
+
+                        <p>
+                            Al igual que en Batocera, los requisitos dependen de qué plataformas 
+                            pretendas emular.
+                        </p>
+
+                        {/**
+                         *  Captura de RetroArch, mismo estilo que las anteriores
+                         */}
+                        <figure>
+                            <img src={retroarchPhoto} alt="" 
+                            className='w-full rounded-lg border border-stone-200'/>
+                            <figcaption className='italic'>
+                                Captura obtenida desde&nbsp;
+                                <a href="https://www.geeknetic.es/Guia/2681/RetroArch-Cuales-son-los-Mejores-Emuladores-y-Como-se-pueden-instalar.html"
+                                target='_blank'
+                                    rel='noreferrer'
+                                    className='text-sky-700 underline underline-offset-4
+                                                hover:text-sky-900 transition'>
+                                    esta web.
+                                </a>
+                            </figcaption>
+                        </figure>
+
+                        {/** Enlace de RetroArch, mismo estilo que los anteriores */}
+                        <a href="https://www.retroarch.com/?page=platforms"
+                            target='_blank'
+                            rel='noreferrer'
+                            className='text-sky-700 underline underline-offset-4
+                            hover:text-sky-900 transition'>
+                            Enlace de descarga
+                        </a>
+                    </div>
+
+                    {/**
+                     *  Bloque de la IA (me refiero a la explicación)
+                     */}
+                    <div className='space-y-4 mt-3'>
+                        <h2 className='text-3xl'>Servidor de IA local</h2>
+
+                        <p className='text-justify'>
+                            Seamos sinceros, la IA ha llegado para quedarse. Uno de los problemas 
+                            que tienen los modelos más conocidos actualmente, es que dependen de 
+                            servicios de empresas que pueden cambiar las condiciones de uso en 
+                            cualquier momento, y además de que los chats que tienes con ellos, 
+                            se usan para entrenar dichos modelos.
+                        </p>
+
+                        <p>
+                            A día de hoy hay muchas maneras de instalar modelos de IA local, 
+                            como recomendación de un método relativamente sencillo, existe un programa
+                            que se llama "LM Studio". Es gratuito y dispones de un montón de modelos 
+                            para probar.
+                        </p>
+
+                        {/** Bloque de texto de advertencia */}
+                        <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
+                            <div className="flex">
+                                <div className="flex-shrink-0">
+                                    <svg
+                                        className="h-5 w-5 text-yellow-400"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div className="ml-3">
+                                    <p className="text-sm text-yellow-700">
+                                        <span className="font-medium">Atención:</span> A diferencia de 
+                                        otros apartados, donde los requisitos de hardware estaban 
+                                        relativamente fijos, en este caso es algo muy variable.
+                                        Tienes modelos como "Phi-4 Mini 3.8B" que con unos 4 GB RAM es suficiente, 
+                                        y auténticos devoradores de recursos como "Llama 4 405B" 
+                                        (necesita más de 128 GB de RAM y configuración multi-GPU)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            Cuanto menos pidan los modelos para ejecutarse, menores serán sus 
+                            capacidades.
+                        </p>
+
+                        <p>
+                            Y tú te estarás preguntando: ¿Cuál es la gracia de esto entonces?
+                        </p>
+
+                        <p>
+                            Pues que no todos los chats necesitan ser un análisis exhaustivo 
+                            de una fórmula matemática innecesariamente compleja, o el código para 
+                            hacer una decompilación de programas grandes. 
+                        </p>
+
+                        <p>
+                            Puedes pedirle un resumen corto, que te traduzca algo a otro idioma, 
+                            y en algunos casos, son capaces de analizar imágenes.
+                        </p>
+                        
+                        <div>
+                            Este caso de uso tiene 2 ventajas principales:
+                            <ul className='list-disc pl-6 space-y-1'>
+                                <li>No necesitas conexión a internet una vez has descargado el modelo</li>
+                                <li>
+                                    Tus chats son privados (ideal si manejas información sensible como finanzas)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/** Bloque de agradecimiento */}
+                    <div>
+                        
                     </div>
                 </div>
             </div>
