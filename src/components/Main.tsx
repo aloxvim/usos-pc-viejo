@@ -679,9 +679,15 @@ function Main() {
                         </div>
                     </div>
 
+                    <hr className='mt-6'/>
+
                     {/** Bloque de agradecimiento */}
-                    <div>
-                        
+                    <div className='space-y-4 mt-6'>
+                        <p className='text-justify'>
+                            Si has llegado hasta aquí quiero darte las gracias por leer esto.
+                            Soy consciente de que hay muchos blogs como este, pero este proyecto 
+                            era para practicar.
+                        </p>
                     </div>
                 </div>
             </div>
