@@ -24,7 +24,7 @@ function Main() {
              *      Más separación entre las líneas y el texto
              */}
             <div className='mx-auto max-w-3xl px-4 py-8 leading-relaxed'>
-                <article>
+                <article id='volverarriba'>
                     <section>
                         <p>
                             ¿Tienes un ordenador antiguo en casa, que ya no puede mover los sistemas actuales
@@ -81,39 +81,67 @@ function Main() {
                                 <tbody>
                                     <tr>
                                         <td>🎬 Multimedia</td>
-                                        <td>Netflix casero (Plex/Jellyfin)</td>
+                                        <td>
+                                            <a href="#streaming"
+                                                className='underline hover:text-sky-700'>
+                                                Netflix casero (Plex/Jellyfin)
+                                            </a>
+                                        </td>
                                         <td>🟢 Fácil</td>
                                     </tr>
 
                                     <tr>
                                         <td>🎬 Multimedia</td>
-                                        <td>Centro de entretenimiento (Kodi)</td>
+                                        <td>
+                                            <a href="#kodi"
+                                                className='underline hover:text-sky-700'>
+                                                Centro de entretenimiento (Kodi)
+                                            </a>
+                                        </td>
                                         <td>🟢 Fácil-Media</td>
                                     </tr>
 
                                     <tr>
                                         <td>🖨️ Utilidades</td>
-                                        <td>Servidor de impresoras / archivos</td>
+                                        <td>
+                                            <a href="#utilidades"
+                                                className='underline hover:text-sky-700'>
+                                                Servidor de impresoras / archivos
+                                            </a>
+                                        </td>
                                         <td>🟠 Fácil-Media</td>
                                     </tr>
 
                                     <tr>
                                         <td>🎮 Gaming</td>
-                                        <td>Consola retro (Batocera)</td>
+                                        <td>
+                                            <a href="#retrogaming"
+                                                className='underline hover:text-sky-700'>
+                                                Consola retro (Batocera, RetroArch)
+                                            </a>
+                                        </td>
                                         <td> 🟠Fácil-Media</td>
                                     </tr>
 
                                     <tr>
                                         <td>🤖 IA</td>
                                         <td>
-                                            Servidor de modelos de inteligencia artificial en local
+                                            <a href="#localai"
+                                                className='underline hover:text-sky-700'>
+                                                Servidor de modelos de inteligencia artificial en local
+                                            </a>
                                         </td>
                                         <td>🔴 Media-Difícil</td>
                                     </tr>
 
                                     <tr>
                                         <td>🖨️ Utilidades</td>
-                                        <td>Google photos casero</td>
+                                        <td>
+                                            <a href="#fotos"
+                                                className='underline hover:text-sky-700'>
+                                                Google photos casero
+                                            </a>
+                                        </td>
                                         <td>🔴 Media-Difícil</td>
                                     </tr>
                                 </tbody>
@@ -134,7 +162,7 @@ function Main() {
 
                         <h2 className="text-3xl">🎬 Multimedia</h2>
 
-                        <h3 className='text-2xl'>Servidor de streaming</h3>
+                        <h3 className='text-2xl' id='streaming'>Servidor de streaming</h3>
                         <p>
                             ¿Tienes una colección de DVD en tu casa y te gustaría tener el
                             contenido organizado en una aplicación con una apariencia parecida
@@ -200,6 +228,16 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/**
@@ -265,6 +303,16 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/** Bloque de Kodi
@@ -274,7 +322,7 @@ function Main() {
                         {/**
                          *  Título negrita, tamaño al doble y separación del bloque anterior
                          */}
-                        <h3 className="font-bold text-2xl mt-4">Kodi</h3>
+                        <h3 className="font-bold text-2xl mt-4" id='kodi'>Kodi</h3>
 
                         <p>
                             Kodi podría parecer un reproductor multimedia común.
@@ -327,6 +375,16 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/**
@@ -335,7 +393,7 @@ function Main() {
                     <div className='space-y-4 mt-5'>
                         <h2 className="text-3xl">🖨️ Utilidades</h2>
 
-                        <h3 className='text-2xl'>Servicios de impresión y archivos</h3>
+                        <h3 className='text-2xl' id='utilidades'>Servicios de impresión y archivos</h3>
 
                         <p className='text-justify'>
                             Si no quieres complicarte en exceso para la compartición de ficheros,
@@ -351,6 +409,16 @@ function Main() {
                             para compartirla en la red, permitiendo que otros equipos envíen
                             trabajos de impresión.
                         </p>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/**
@@ -358,7 +426,7 @@ function Main() {
                      *      
                      */}
                     <div className='space-y-4 mt-5'>
-                        <h3 className='text-2xl'>Google Photos Casero (Immich)</h3>
+                        <h3 className='text-2xl' id='fotos'>Google Photos Casero (Immich)</h3>
 
                         <p className='text-justify'>
                             Immich es una aplicación de código abierto y autoalojada diseñada
@@ -426,6 +494,16 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/**
@@ -435,7 +513,7 @@ function Main() {
                     <div className='space-y-4 mt-3'>
                         <h2 className='text-3xl'>🎮 Gaming</h2>
 
-                        <h3 className='text-2xl'>Consola retro (Batocera, RetroArch, etc...)</h3>
+                        <h3 className='text-2xl' id='retrogaming'>Consola retro (Batocera, RetroArch, etc...)</h3>
 
                         {/** Bloque de texto de advertencia */}
                         <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
@@ -539,6 +617,16 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/**
@@ -550,12 +638,12 @@ function Main() {
 
                         <p className='text-justify'>
                             RetroArch NO es un emulador en sí, sino un programa que "junta"
-                            muchos emuladores, permitiendo la descarga de uno o varios desde 
-                            el propio programa. 
+                            muchos emuladores, permitiendo la descarga de uno o varios desde
+                            el propio programa.
                         </p>
 
                         <p className='text-justify'>
-                            La principal diferencia con Batocera, es que RetroArch no es un sistema 
+                            La principal diferencia con Batocera, es que RetroArch no es un sistema
                             aparte, es un programa que se instala en tu sistema como cualquier otro.
                             Es gratuito y de código abierto.
                         </p>
@@ -565,7 +653,7 @@ function Main() {
                         </p>
 
                         <p>
-                            Al igual que en Batocera, los requisitos dependen de qué plataformas 
+                            Al igual que en Batocera, los requisitos dependen de qué plataformas
                             pretendas emular.
                         </p>
 
@@ -573,12 +661,12 @@ function Main() {
                          *  Captura de RetroArch, mismo estilo que las anteriores
                          */}
                         <figure>
-                            <img src={retroarchPhoto} alt="" 
-                            className='w-full rounded-lg border border-stone-200'/>
+                            <img src={retroarchPhoto} alt=""
+                                className='w-full rounded-lg border border-stone-200' />
                             <figcaption className='italic'>
                                 Captura obtenida desde&nbsp;
                                 <a href="https://www.geeknetic.es/Guia/2681/RetroArch-Cuales-son-los-Mejores-Emuladores-y-Como-se-pueden-instalar.html"
-                                target='_blank'
+                                    target='_blank'
                                     rel='noreferrer'
                                     className='text-sky-700 underline underline-offset-4
                                                 hover:text-sky-900 transition'>
@@ -595,26 +683,36 @@ function Main() {
                             hover:text-sky-900 transition'>
                             Enlace de descarga
                         </a>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
                     {/**
                      *  Bloque de la IA (me refiero a la explicación)
                      */}
                     <div className='space-y-4 mt-3'>
-                        <h2 className='text-3xl'>Servidor de IA local</h2>
+                        <h2 className='text-3xl' id='localai'>Servidor de IA local</h2>
 
                         <p className='text-justify'>
-                            Seamos sinceros, la IA ha llegado para quedarse. Uno de los problemas 
-                            que tienen los modelos más conocidos actualmente, es que dependen de 
-                            servicios de empresas que pueden cambiar las condiciones de uso en 
-                            cualquier momento, y además de que los chats que tienes con ellos, 
+                            Seamos sinceros, la IA ha llegado para quedarse. Uno de los problemas
+                            que tienen los modelos más conocidos actualmente, es que dependen de
+                            servicios de empresas que pueden cambiar las condiciones de uso en
+                            cualquier momento, y además de que los chats que tienes con ellos,
                             se usan para entrenar dichos modelos.
                         </p>
 
                         <p>
-                            A día de hoy hay muchas maneras de instalar modelos de IA local, 
+                            A día de hoy hay muchas maneras de instalar modelos de IA local,
                             como recomendación de un método relativamente sencillo, existe un programa
-                            que se llama "LM Studio". Es gratuito y dispones de un montón de modelos 
+                            que se llama "LM Studio". Es gratuito y dispones de un montón de modelos
                             para probar.
                         </p>
 
@@ -637,11 +735,11 @@ function Main() {
                                 </div>
                                 <div className="ml-3">
                                     <p className="text-sm text-yellow-700">
-                                        <span className="font-medium">Atención:</span> A diferencia de 
-                                        otros apartados, donde los requisitos de hardware estaban 
+                                        <span className="font-medium">Atención:</span> A diferencia de
+                                        otros apartados, donde los requisitos de hardware estaban
                                         relativamente fijos, en este caso es algo muy variable.
-                                        Tienes modelos como "Phi-4 Mini 3.8B" que con unos 4 GB RAM es suficiente, 
-                                        y auténticos devoradores de recursos como "Llama 4 405B" 
+                                        Tienes modelos como "Phi-4 Mini 3.8B" que con unos 4 GB RAM es suficiente,
+                                        y auténticos devoradores de recursos como "Llama 4 405B"
                                         (necesita más de 128 GB de RAM y configuración multi-GPU)
                                     </p>
                                 </div>
@@ -649,7 +747,7 @@ function Main() {
                         </div>
 
                         <p>
-                            Cuanto menos pidan los modelos para ejecutarse, menores serán sus 
+                            Cuanto menos pidan los modelos para ejecutarse, menores serán sus
                             capacidades.
                         </p>
 
@@ -658,16 +756,16 @@ function Main() {
                         </p>
 
                         <p>
-                            Pues que no todos los chats necesitan ser un análisis exhaustivo 
-                            de una fórmula matemática innecesariamente compleja, o el código para 
-                            hacer una decompilación de programas grandes. 
+                            Pues que no todos los chats necesitan ser un análisis exhaustivo
+                            de una fórmula matemática innecesariamente compleja, o el código para
+                            hacer una decompilación de programas grandes.
                         </p>
 
                         <p>
-                            Puedes pedirle un resumen corto, que te traduzca algo a otro idioma, 
+                            Puedes pedirle un resumen corto, que te traduzca algo a otro idioma,
                             y en algunos casos, son capaces de analizar imágenes.
                         </p>
-                        
+
                         <div>
                             Este caso de uso tiene 2 ventajas principales:
                             <ul className='list-disc pl-6 space-y-1'>
@@ -677,16 +775,25 @@ function Main() {
                                 </li>
                             </ul>
                         </div>
+
+                        {/**
+                         *  Enlace para volver al inicio del artículo
+                         */}
+                        <div className='mt-3'>
+                            <a href="#volverarriba"
+                                className='hover:underline'>
+                                ⬆️ Volver al inicio
+                            </a>
+                        </div>
                     </div>
 
-                    <hr className='mt-6'/>
+                    <hr className='mt-6' />
 
                     {/** Bloque de agradecimiento */}
                     <div className='space-y-4 mt-6'>
                         <p className='text-justify'>
                             Si has llegado hasta aquí quiero darte las gracias por leer esto.
-                            Soy consciente de que hay muchos blogs como este, pero este proyecto 
-                            era para practicar.
+                            Espero que haya sido útil.
                         </p>
                     </div>
                 </div>

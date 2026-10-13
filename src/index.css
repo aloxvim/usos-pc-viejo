@@ -10,3 +10,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* Desplazamiento suave */
+html{
+    scroll-behavior: smooth;
+}
