@@ -207,7 +207,8 @@ function Main() {
                          *      Borde fino gris claro
                          */}
                         <img src={plexPhoto} alt="Ejemplo de cómo se ve un servidor"
-                            className='w-full rounded-lg border border-stone-200' />
+                            className='w-full rounded-lg border border-stone-200' 
+                            loading='lazy'/>
 
                         <p>
                             Plex tiene una pega, y es que varias de sus características, incluida
@@ -291,7 +292,8 @@ function Main() {
                          *  Captura de Jellyfin: mismo estilo que la de Plex
                          */}
                         <img src={jellyfinPhoto} alt="Ejemplo de cómo se ve"
-                            className='w-full rounded-lg border border-stone-200' />
+                            className='w-full rounded-lg border border-stone-200' 
+                            loading='lazy'/>
 
                         {/**
                          *  Enlace de descarga: mismo estilo que el de plex
@@ -355,7 +357,8 @@ function Main() {
                         {/** Captura de Kodi, mismo estilo que las anteriores */}
                         <figure>
                             <img src={kodiPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' />
+                                className='w-full rounded-lg border border-stone-200' 
+                                loading='lazy'/>
                             <figcaption className='italic'>
                                 Captura tomada de su página en&nbsp;
                                 <a href="https://flathub.org/es/apps/tv.kodi.Kodi"
@@ -482,7 +485,8 @@ function Main() {
                         {/** Captura de pantalla, mismo estilo que las anteriores */}
                         <figure>
                             <img src={immichPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' />
+                                className='w-full rounded-lg border border-stone-200' 
+                                loading='lazy'/>
                             <figcaption className='italic'>Captura descargada de la propia página de Immich.</figcaption>
                         </figure>
 
@@ -596,7 +600,8 @@ function Main() {
                          */}
                         <figure>
                             <img src={batoceraPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' />
+                                className='w-full rounded-lg border border-stone-200' 
+                                loading='lazy'/>
                             <figcaption className='italic'>
                                 Captura obtenida desde&nbsp;
                                 <a href="https://raspberrytips.com/batocera-installation-raspberry-pi/"
@@ -662,7 +667,8 @@ function Main() {
                          */}
                         <figure>
                             <img src={retroarchPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' />
+                                className='w-full rounded-lg border border-stone-200' 
+                                loading='lazy'/>
                             <figcaption className='italic'>
                                 Captura obtenida desde&nbsp;
                                 <a href="https://www.geeknetic.es/Guia/2681/RetroArch-Cuales-son-los-Mejores-Emuladores-y-Como-se-pueden-instalar.html"
