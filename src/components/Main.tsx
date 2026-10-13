@@ -49,6 +49,11 @@ function Main() {
                             Aquí va un pequeño resumen de lo que se puede hacer, se detallará más adelante:
                         </p>
 
+                        <p className='text-sm text-stone-500'>
+                            🟢 Suele funcionar sin tocar nada · 🟠 Puede requerir ajustes o depender de tu 
+                            hardware · 🔴 Requiere ciertos conocimientos
+                        </p>
+
                         {/**
                          *  Contenedor de la tabla:
                          *      Diseño responsivo
@@ -207,8 +212,8 @@ function Main() {
                          *      Borde fino gris claro
                          */}
                         <img src={plexPhoto} alt="Ejemplo de cómo se ve un servidor"
-                            className='w-full rounded-lg border border-stone-200' 
-                            loading='lazy'/>
+                            className='w-full rounded-lg border border-stone-200'
+                            loading='lazy' />
 
                         <p>
                             Plex tiene una pega, y es que varias de sus características, incluida
@@ -232,10 +237,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -284,16 +299,16 @@ function Main() {
                         </p>
 
                         <p>
-                            Sus requisitos son: procesador moderno de doble núcleo a 2 GHz o más,
-                            2 GB de RAM son el mínimo funcional, pero es recomendable disponer de 4 GB,
+                            No fija unos requisitos mínimos, pero lo ideal es contar con
+                            un procesador moderno de 2-4 núcleos y 8 GB RAM.
                         </p>
 
                         {/**
                          *  Captura de Jellyfin: mismo estilo que la de Plex
                          */}
                         <img src={jellyfinPhoto} alt="Ejemplo de cómo se ve"
-                            className='w-full rounded-lg border border-stone-200' 
-                            loading='lazy'/>
+                            className='w-full rounded-lg border border-stone-200'
+                            loading='lazy' />
 
                         {/**
                          *  Enlace de descarga: mismo estilo que el de plex
@@ -308,10 +323,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -357,8 +382,8 @@ function Main() {
                         {/** Captura de Kodi, mismo estilo que las anteriores */}
                         <figure>
                             <img src={kodiPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' 
-                                loading='lazy'/>
+                                className='w-full rounded-lg border border-stone-200'
+                                loading='lazy' />
                             <figcaption className='italic'>
                                 Captura tomada de su página en&nbsp;
                                 <a href="https://flathub.org/es/apps/tv.kodi.Kodi"
@@ -381,10 +406,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -407,7 +442,7 @@ function Main() {
                         </p>
 
                         <p className='text-justify'>
-                            En cuando al servicio de impresión, conecta la impresora físicamente
+                            En cuanto al servicio de impresión, conecta la impresora físicamente
                             al servidor y utiliza el sistema CUPS (Common Unix Printing System)
                             para compartirla en la red, permitiendo que otros equipos envíen
                             trabajos de impresión.
@@ -415,10 +450,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -444,10 +489,12 @@ function Main() {
                             por contenido y sincronización automática desde móviles.
                         </p>
 
-                        <p>
+                        <p className='text-justify'>
                             Sus requisitos son: CPU de al menos 2 núcleos, siendo recomendable 4;
-                            mínimo 4 GB de RAM, siendo recomendable de 6 en adelante;
+                            mínimo 6 GB de RAM, siendo recomendable de 8 en adelante;
                             en cuanto al espacio, un 10-20% adicional para miniaturas y metadatos.
+                            (Se puede usar con 4 GB RAM si desactivas el reconocimiento facial y
+                            la búsqueda inteligente).
                         </p>
 
                         <p>
@@ -485,8 +532,8 @@ function Main() {
                         {/** Captura de pantalla, mismo estilo que las anteriores */}
                         <figure>
                             <img src={immichPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' 
-                                loading='lazy'/>
+                                className='w-full rounded-lg border border-stone-200'
+                                loading='lazy' />
                             <figcaption className='italic'>Captura descargada de la propia página de Immich.</figcaption>
                         </figure>
 
@@ -501,10 +548,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -600,8 +657,8 @@ function Main() {
                          */}
                         <figure>
                             <img src={batoceraPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' 
-                                loading='lazy'/>
+                                className='w-full rounded-lg border border-stone-200'
+                                loading='lazy' />
                             <figcaption className='italic'>
                                 Captura obtenida desde&nbsp;
                                 <a href="https://raspberrytips.com/batocera-installation-raspberry-pi/"
@@ -625,10 +682,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -667,8 +734,8 @@ function Main() {
                          */}
                         <figure>
                             <img src={retroarchPhoto} alt=""
-                                className='w-full rounded-lg border border-stone-200' 
-                                loading='lazy'/>
+                                className='w-full rounded-lg border border-stone-200'
+                                loading='lazy' />
                             <figcaption className='italic'>
                                 Captura obtenida desde&nbsp;
                                 <a href="https://www.geeknetic.es/Guia/2681/RetroArch-Cuales-son-los-Mejores-Emuladores-y-Como-se-pueden-instalar.html"
@@ -692,10 +759,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
@@ -745,7 +822,7 @@ function Main() {
                                         otros apartados, donde los requisitos de hardware estaban
                                         relativamente fijos, en este caso es algo muy variable.
                                         Tienes modelos como "Phi-4 Mini 3.8B" que con unos 4 GB RAM es suficiente,
-                                        y auténticos devoradores de recursos como "Llama 4 405B"
+                                        y auténticos devoradores de recursos como "Llama 3.1 405B"
                                         (necesita más de 128 GB de RAM y configuración multi-GPU)
                                     </p>
                                 </div>
@@ -784,10 +861,20 @@ function Main() {
 
                         {/**
                          *  Enlace para volver al inicio del artículo
+                         *      Espacio por encima
+                         *      Alineado a la derecha
                          */}
-                        <div className='mt-3'>
+                        <div className='mt-3 flex justify-end pt-2'>
+                            {/** Enlace
+                             *      Flecha y texto en la misma línea
+                             *      Borde redondeado
+                             *      Padding ajustado y letra pequeña 
+                             *      Cambio del color de borde y texto al pasar el ratón por encima
+                             */}
                             <a href="#volverarriba"
-                                className='hover:underline'>
+                                className='group inline-flex items-center gap-2 rounded-full border
+                                border-stone-300 px-4 py-1.5 text-sm text-stone-600 hover:border-sky-700
+                                hover:text-sky-700 transition'>
                                 ⬆️ Volver al inicio
                             </a>
                         </div>
