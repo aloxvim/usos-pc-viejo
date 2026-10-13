@@ -82,25 +82,25 @@ function Main() {
                                     <tr>
                                         <td>🎬 Multimedia</td>
                                         <td>Netflix casero (Plex/Jellyfin)</td>
-                                        <td>Fácil</td>
+                                        <td>🟢 Fácil</td>
                                     </tr>
 
                                     <tr>
                                         <td>🎬 Multimedia</td>
                                         <td>Centro de entretenimiento (Kodi)</td>
-                                        <td>Fácil-Media</td>
+                                        <td>🟢 Fácil-Media</td>
                                     </tr>
 
                                     <tr>
                                         <td>🖨️ Utilidades</td>
                                         <td>Servidor de impresoras / archivos</td>
-                                        <td>Fácil-Media</td>
+                                        <td>🟠 Fácil-Media</td>
                                     </tr>
 
                                     <tr>
                                         <td>🎮 Gaming</td>
                                         <td>Consola retro (Batocera)</td>
-                                        <td>Fácil-Media</td>
+                                        <td> 🟠Fácil-Media</td>
                                     </tr>
 
                                     <tr>
@@ -108,13 +108,13 @@ function Main() {
                                         <td>
                                             Servidor de modelos de inteligencia artificial en local
                                         </td>
-                                        <td>Media-Difícil</td>
+                                        <td>🔴 Media-Difícil</td>
                                     </tr>
 
                                     <tr>
                                         <td>🖨️ Utilidades</td>
                                         <td>Google photos casero</td>
-                                        <td>Media-Difícil</td>
+                                        <td>🔴 Media-Difícil</td>
                                     </tr>
                                 </tbody>
                             </table>
