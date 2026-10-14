@@ -59,7 +59,7 @@ function Header() {
                 <a href="https://www.github.com/aloxvim" target='_blank' rel='noreferrer' className='hover:opacity-80 transition'>
                     <img src={githubLogo} alt="Enlace a mi perfil de Github" />
                 </a>
-                <a href="" target='_blank' rel='noreferrer' className='hover:opacity-80 transition'>
+                <a href="https://www.youtube.com/@aloxvim" target='_blank' rel='noreferrer' className='hover:opacity-80 transition'>
                     <img src={youtubeLogo} alt="Enlace a mi perfil de Youtube" />
                 </a>
             </nav>

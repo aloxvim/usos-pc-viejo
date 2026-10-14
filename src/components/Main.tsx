@@ -1,9 +1,9 @@
 import plexPhoto from '../assets/multimedia/plex.jpg';
 import jellyfinPhoto from '../assets/multimedia/jellyfin.jpg';
 import kodiPhoto from '../assets/multimedia/kodi.png';
-import immichPhoto from '../assets/utilidades/immich.webp';
+import immichPhoto from '../assets/utilidades/immich.jpg';
 import batoceraPhoto from '../assets/gaming/batocera-emulationstation.jpg';
-import retroarchPhoto from '../assets/gaming/retroarch.webp';
+import retroarchPhoto from '../assets/gaming/retroarch.png';
 
 function Main() {
     return (
@@ -289,9 +289,10 @@ function Main() {
                             lo esperes.
                         </p>
 
-                        <p>
+                        <p className='text-justify'>
                             También hay que añadir que admite una mayor personalización con complementos de
-                            terceros. Por lo demás son prácticamente iguales.
+                            terceros. Ambos permiten organizar y reproducir tu biblioteca multimedia, aunque 
+                            difieren en funciones, compatibilidad y forma de gestionar el acceso remoto.
                         </p>
 
                         <p>
@@ -384,15 +385,6 @@ function Main() {
                             <img src={kodiPhoto} alt=""
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
-                            <figcaption className='italic'>
-                                Captura tomada de su página en&nbsp;
-                                <a href="https://flathub.org/es/apps/tv.kodi.Kodi"
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className='underline hover:text-black'>
-                                    flathub.
-                                </a>
-                            </figcaption>
                         </figure>
 
                         {/** Enlace de descarga, mismo estilo que los anteriores */}
@@ -534,7 +526,6 @@ function Main() {
                             <img src={immichPhoto} alt=""
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
-                            <figcaption className='italic'>Captura descargada de la propia página de Immich.</figcaption>
                         </figure>
 
                         {/** Enlace de descarga, mismo estilo que los anteriores */}
@@ -659,16 +650,6 @@ function Main() {
                             <img src={batoceraPhoto} alt=""
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
-                            <figcaption className='italic'>
-                                Captura obtenida desde&nbsp;
-                                <a href="https://raspberrytips.com/batocera-installation-raspberry-pi/"
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className='text-sky-700 underline underline-offset-4
-                                                hover:text-sky-900 transition'>
-                                    esta web
-                                </a>
-                            </figcaption>
                         </figure>
 
                         {/** Enlace de descarga, mismo estilo que los anteriores */}
@@ -736,16 +717,6 @@ function Main() {
                             <img src={retroarchPhoto} alt=""
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
-                            <figcaption className='italic'>
-                                Captura obtenida desde&nbsp;
-                                <a href="https://www.geeknetic.es/Guia/2681/RetroArch-Cuales-son-los-Mejores-Emuladores-y-Como-se-pueden-instalar.html"
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className='text-sky-700 underline underline-offset-4
-                                                hover:text-sky-900 transition'>
-                                    esta web.
-                                </a>
-                            </figcaption>
                         </figure>
 
                         {/** Enlace de RetroArch, mismo estilo que los anteriores */}
@@ -785,14 +756,12 @@ function Main() {
                         <h2 className='text-3xl' id='localai'>Servidor de IA local</h2>
 
                         <p className='text-justify'>
-                            Seamos sinceros, la IA ha llegado para quedarse. Uno de los problemas
-                            que tienen los modelos más conocidos actualmente, es que dependen de
-                            servicios de empresas que pueden cambiar las condiciones de uso en
-                            cualquier momento, y además de que los chats que tienes con ellos,
-                            se usan para entrenar dichos modelos.
+                            Seamos sinceros, la IA ha llegado para quedarse. Sin embargo, muchos 
+                            de los servicios más conocidos dependen de plataformas en la nube, 
+                            cuyas condiciones de uso y políticas de privacidad pueden variar.
                         </p>
 
-                        <p>
+                        <p className='text-justify'>
                             A día de hoy hay muchas maneras de instalar modelos de IA local,
                             como recomendación de un método relativamente sencillo, existe un programa
                             que se llama "LM Studio". Es gratuito y dispones de un montón de modelos
@@ -817,13 +786,13 @@ function Main() {
                                     </svg>
                                 </div>
                                 <div className="ml-3">
-                                    <p className="text-sm text-yellow-700">
-                                        <span className="font-medium">Atención:</span> A diferencia de
-                                        otros apartados, donde los requisitos de hardware estaban
-                                        relativamente fijos, en este caso es algo muy variable.
-                                        Tienes modelos como "Phi-4 Mini 3.8B" que con unos 4 GB RAM es suficiente,
-                                        y auténticos devoradores de recursos como "Llama 3.1 405B"
-                                        (necesita más de 128 GB de RAM y configuración multi-GPU)
+                                    <p className="text-sm text-yellow-700 text-justify">
+                                        <span className="font-medium">Atención:</span> Los requisitos 
+                                        dependen del modelo, su cuantización y el tamaño del contexto. 
+                                        Algunos modelos pequeños pueden funcionar en equipos modestos, 
+                                        mientras que los modelos más grandes necesitan mucha más memoria 
+                                        RAM o memoria de vídeo (VRAM). Antes de descargar uno, comprueba 
+                                        sus requisitos y las recomendaciones de la herramienta que utilices.
                                     </p>
                                 </div>
                             </div>
@@ -854,7 +823,7 @@ function Main() {
                             <ul className='list-disc pl-6 space-y-1'>
                                 <li>No necesitas conexión a internet una vez has descargado el modelo</li>
                                 <li>
-                                    Tus chats son privados (ideal si manejas información sensible como finanzas)
+                                    Tus chats son privados (no salen de tu dispositivo)
                                 </li>
                             </ul>
                         </div>
