@@ -23,7 +23,7 @@ function Main() {
              *      Espacio arriba y abajo 
              *      Más separación entre las líneas y el texto
              */}
-            <div className='mx-auto max-w-3xl px-4 py-8 leading-relaxed'>
+            <div className='mx-auto max-w-3xl px-4 py-8 leading-relaxed text-justify'>
                 <article id='volverarriba'>
                     <section>
                         <p>
@@ -50,7 +50,7 @@ function Main() {
                         </p>
 
                         <p className='text-sm text-stone-500'>
-                            🟢 Suele funcionar sin tocar nada · 🟠 Puede requerir ajustes o depender de tu 
+                            🟢 Suele funcionar sin tocar nada · 🟠 Puede requerir ajustes o depender de tu
                             hardware · 🔴 Requiere ciertos conocimientos
                         </p>
 
@@ -125,7 +125,7 @@ function Main() {
                                                 Consola retro (Batocera, RetroArch)
                                             </a>
                                         </td>
-                                        <td> 🟠Fácil-Media</td>
+                                        <td>🟠 Fácil-Media</td>
                                     </tr>
 
                                     <tr>
@@ -202,7 +202,8 @@ function Main() {
 
                         <p>
                             Sus requisitos mínimos son: procesador Intel Core i3 o equivalente, y 4 GB de RAM
-                            (aunque 2 GB pueden ser suficientes en instalaciones Linux).
+                            (aunque 2 GB pueden ser suficientes en instalaciones Linux). Sus requisitos
+                            pueden elevarse en caso de hacer transcodificación.
                         </p>
 
                         {/**
@@ -211,7 +212,7 @@ function Main() {
                          *      Esquinas redondeadas
                          *      Borde fino gris claro
                          */}
-                        <img src={plexPhoto} alt="Ejemplo de cómo se ve un servidor"
+                        <img src={plexPhoto} alt="Interfaz de Plex"
                             className='w-full rounded-lg border border-stone-200'
                             loading='lazy' />
 
@@ -289,9 +290,9 @@ function Main() {
                             lo esperes.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             También hay que añadir que admite una mayor personalización con complementos de
-                            terceros. Ambos permiten organizar y reproducir tu biblioteca multimedia, aunque 
+                            terceros. Ambos permiten organizar y reproducir tu biblioteca multimedia, aunque
                             difieren en funciones, compatibilidad y forma de gestionar el acceso remoto.
                         </p>
 
@@ -307,7 +308,7 @@ function Main() {
                         {/**
                          *  Captura de Jellyfin: mismo estilo que la de Plex
                          */}
-                        <img src={jellyfinPhoto} alt="Ejemplo de cómo se ve"
+                        <img src={jellyfinPhoto} alt="Interfaz de Jellyfin con personalización aplicada"
                             className='w-full rounded-lg border border-stone-200'
                             loading='lazy' />
 
@@ -363,7 +364,7 @@ function Main() {
                             emuladores, el límite está en cuánto quieres configurar.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             Hablar en detalle de los complementos haría este blog interminable,
                             por lo que mi recomendación es, que si te decantas por usar Kodi,
                             investigues cuáles son los complementos que te interesan. Hay
@@ -371,18 +372,19 @@ function Main() {
                         </p>
 
                         <p>
-                            Se encuentra disponible en Windows, Linux, Android, Raspberry Pi, LG WEB-OS,
+                            Se encuentra disponible en Windows (10 o superior), Linux,
+                            Android, Raspberry Pi, LG WEB-OS,
                             Mac OS y IOS.
                         </p>
 
                         <p>
                             Sus requisitos son: procesador Pentium 4 o superior y
-                            al menos 1 GB RAM.
+                            al menos 2 GB RAM.
                         </p>
 
                         {/** Captura de Kodi, mismo estilo que las anteriores */}
                         <figure>
-                            <img src={kodiPhoto} alt=""
+                            <img src={kodiPhoto} alt="Interfaz por defecto de Kodi"
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
                         </figure>
@@ -425,7 +427,7 @@ function Main() {
 
                         <h3 className='text-2xl' id='utilidades'>Servicios de impresión y archivos</h3>
 
-                        <p className='text-justify'>
+                        <p>
                             Si no quieres complicarte en exceso para la compartición de ficheros,
                             puedes usar servicios como samba o programas como Filezilla, donde puedes
                             especificar qué carpetas quieres compartir. También puedes
@@ -433,7 +435,7 @@ function Main() {
                             requiere un mayor tiempo de configuración.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             En cuanto al servicio de impresión, conecta la impresora físicamente
                             al servidor y utiliza el sistema CUPS (Common Unix Printing System)
                             para compartirla en la red, permitiendo que otros equipos envíen
@@ -468,20 +470,20 @@ function Main() {
                     <div className='space-y-4 mt-5'>
                         <h3 className='text-2xl' id='fotos'>Google Photos Casero (Immich)</h3>
 
-                        <p className='text-justify'>
+                        <p>
                             Immich es una aplicación de código abierto y autoalojada diseñada
                             para gestionar, almacenar y respaldar fotos y videos, funcionando
                             como una alternativa privada a servicios como Google Photos o iCloud.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             Su principal ventaja es que mantiene el control total de
                             los datos en tu propio hardware, ofreciendo funciones
                             avanzadas como reconocimiento facial, búsqueda semántica
                             por contenido y sincronización automática desde móviles.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             Sus requisitos son: CPU de al menos 2 núcleos, siendo recomendable 4;
                             mínimo 6 GB de RAM, siendo recomendable de 8 en adelante;
                             en cuanto al espacio, un 10-20% adicional para miniaturas y metadatos.
@@ -496,7 +498,7 @@ function Main() {
                         {/** Bloque de texto de advertencia */}
                         <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
                             <div className="flex">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <svg
                                         className="h-5 w-5 text-yellow-400"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -523,7 +525,7 @@ function Main() {
 
                         {/** Captura de pantalla, mismo estilo que las anteriores */}
                         <figure>
-                            <img src={immichPhoto} alt=""
+                            <img src={immichPhoto} alt="Herramientas disponibles en Immich"
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
                         </figure>
@@ -570,7 +572,7 @@ function Main() {
                         {/** Bloque de texto de advertencia */}
                         <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
                             <div className="flex">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <svg
                                         className="h-5 w-5 text-yellow-400"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -596,7 +598,7 @@ function Main() {
                             </div>
                         </div>
 
-                        <p className='text-justify'>
+                        <p>
                             ¿Te acuerdas de las consolas clásicas? Uno de los usos que puedes darle a tu
                             viejo PC es el de convertirlo en un sistema de emulación, desde la NES o la
                             Megadrive hasta, si el PC puede dar la talla, PlayStation 2.
@@ -623,11 +625,12 @@ function Main() {
                         <h3 className='text-2xl font-bold'>Batocera</h3>
 
                         <p>
-                            Batocera es un sistema Linux que solo permite convertir un PC en
-                            una consola retro, también permite instalar Kodi.
+                            Batocera es un sistema Linux pensado
+                            para convertir un PC en una consola retro,
+                            y que además permite instalar Kodi. 
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             Su gran ventaja es que puedes instalarlo en un USB, sin necesidad
                             de tocar la configuración de tu PC (aunque también puedes instalarlo en el disco
                             interno de tu PC).
@@ -635,10 +638,10 @@ function Main() {
                             contando con más de 200 sistemas ya configurados.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             Sus requisitos dependen de las consolas que quieras emular.
                             Las consolas de 8 y 16 bits las mueve casi cualquier PC. Consolas
-                            más potentes como Play 2 en adelante necesitarán un procesador y
+                            más potentes como Play Station 2 en adelante necesitarán un procesador y
                             gráfica más potentes.
                         </p>
 
@@ -647,7 +650,7 @@ function Main() {
                          *      Mismo estilo que las anteriores
                          */}
                         <figure>
-                            <img src={batoceraPhoto} alt=""
+                            <img src={batoceraPhoto} alt="Captura del menú principal de Emulation Station"
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
                         </figure>
@@ -689,13 +692,13 @@ function Main() {
                     <div className='space-y-4'>
                         <h3 className='text-2xl font-bold mt-4'>RetroArch</h3>
 
-                        <p className='text-justify'>
+                        <p>
                             RetroArch NO es un emulador en sí, sino un programa que "junta"
                             muchos emuladores, permitiendo la descarga de uno o varios desde
                             el propio programa.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             La principal diferencia con Batocera, es que RetroArch no es un sistema
                             aparte, es un programa que se instala en tu sistema como cualquier otro.
                             Es gratuito y de código abierto.
@@ -714,7 +717,7 @@ function Main() {
                          *  Captura de RetroArch, mismo estilo que las anteriores
                          */}
                         <figure>
-                            <img src={retroarchPhoto} alt=""
+                            <img src={retroarchPhoto} alt="Captura de la interfaz por defecto de RetroArch"
                                 className='w-full rounded-lg border border-stone-200'
                                 loading='lazy' />
                         </figure>
@@ -755,13 +758,13 @@ function Main() {
                     <div className='space-y-4 mt-3'>
                         <h2 className='text-3xl' id='localai'>Servidor de IA local</h2>
 
-                        <p className='text-justify'>
-                            Seamos sinceros, la IA ha llegado para quedarse. Sin embargo, muchos 
-                            de los servicios más conocidos dependen de plataformas en la nube, 
+                        <p>
+                            Seamos sinceros, la IA ha llegado para quedarse. Sin embargo, muchos
+                            de los servicios más conocidos dependen de plataformas en la nube,
                             cuyas condiciones de uso y políticas de privacidad pueden variar.
                         </p>
 
-                        <p className='text-justify'>
+                        <p>
                             A día de hoy hay muchas maneras de instalar modelos de IA local,
                             como recomendación de un método relativamente sencillo, existe un programa
                             que se llama "LM Studio". Es gratuito y dispones de un montón de modelos
@@ -771,7 +774,7 @@ function Main() {
                         {/** Bloque de texto de advertencia */}
                         <div className="border-l-4 border-yellow-400 bg-yellow-50 p-4">
                             <div className="flex">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <svg
                                         className="h-5 w-5 text-yellow-400"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -786,12 +789,12 @@ function Main() {
                                     </svg>
                                 </div>
                                 <div className="ml-3">
-                                    <p className="text-sm text-yellow-700 text-justify">
-                                        <span className="font-medium">Atención:</span> Los requisitos 
-                                        dependen del modelo, su cuantización y el tamaño del contexto. 
-                                        Algunos modelos pequeños pueden funcionar en equipos modestos, 
-                                        mientras que los modelos más grandes necesitan mucha más memoria 
-                                        RAM o memoria de vídeo (VRAM). Antes de descargar uno, comprueba 
+                                    <p className="text-sm text-yellow-700">
+                                        <span className="font-medium">Atención:</span> Los requisitos
+                                        dependen del modelo, su cuantización y el tamaño del contexto.
+                                        Algunos modelos pequeños pueden funcionar en equipos modestos,
+                                        mientras que los modelos más grandes necesitan mucha más memoria
+                                        RAM o memoria de video (VRAM). Antes de descargar uno, comprueba
                                         sus requisitos y las recomendaciones de la herramienta que utilices.
                                     </p>
                                 </div>
@@ -853,9 +856,21 @@ function Main() {
 
                     {/** Bloque de agradecimiento */}
                     <div className='space-y-4 mt-6'>
-                        <p className='text-justify'>
+                        <p>
                             Si has llegado hasta aquí quiero darte las gracias por leer esto.
                             Espero que haya sido útil.
+                        </p>
+
+                        <p>
+                            Kodi, Plex, Jellyfin, Immich, Batocera y RetroArch son
+                            marcas de sus respectivos propietarios.
+                        </p>
+
+                        <p>
+                            Película en las capturas:
+                            <a className='hover:underline text-sky-700' href="https://peach.blender.org/" target="_blank" rel="noreferrer"> Big Buck Bunny</a>,
+                            © 2008 Blender Foundation | www.bigbuckbunny.org, licencia
+                            <a className='hover:underline text-sky-700' href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noreferrer"> CC BY 3.0</a>.
                         </p>
                     </div>
                 </div>

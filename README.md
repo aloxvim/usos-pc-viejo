@@ -39,3 +39,6 @@ pnpm run build
 
 - Icono de ordenador: https://www.flaticon.es/iconos-gratis/computadora
 
+- Película en las capturas: Big Buck Bunny © 2008 Blender Foundation | www.bigbuckbunny.org, licencia CC BY 3.0
+    - https://peach.blender.org/ 
+    - https://creativecommons.org/licenses/by/3.0/
